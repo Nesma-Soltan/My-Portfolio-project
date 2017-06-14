@@ -1,0 +1,239 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #424242;
+}
+
+h1,
+h2,
+h3,
+{
+ margin: 0px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  background-color: #35475d;
+  width: 100%;
+}
+
+.logo{
+  padding-top: 10px;
+  padding-left: 30px;
+
+}
+.header h1 {
+  font-size: 150%;
+  margin-left: .5em;
+  vertical-align: top;
+  padding-top: 10px;
+  color: #fff;
+
+}
+
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+
+
+.nav-item {
+  font-size: 15px;
+  width: 50%;
+  text-align: left;
+  padding: 22px;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f1c30b;
+  padding: 1.5em;
+}
+
+.nav a:hover ,
+footer a:hover {
+  text-decoration: underline;
+  color: #35475d;
+  background-color: #fff;
+}
+
+/*
+ *
+ * content
+ *
+ */
+ .content {
+  display: block;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+ }
+
+.about p{
+  text-align: justify;
+  line-height: 2em;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+.my_work_designs{
+  padding-top: 20px;
+
+}
+
+picture img{
+  align-items: center;
+  max-width: 280px;
+  width: 100%;
+  padding: 25px;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.footer {
+  border-top: 1px solid #E0E0E0;
+  width: 100%;
+  margin: 0 auto;
+
+
+}
+
+footer li {
+  margin: 0 1em;
+  padding-left: 20px;
+
+}
+.footer h3 ,
+.footer p ,
+.footer a{
+    padding: 1.5em;
+
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.footer p{
+    background-color: #35475d;
+    color: #fff;
+}
+#social,
+.footer p{
+  text-align: center;
+}
+footer .fa{
+  font-size:24px;
+}
+/*
+ *
+ * media queery for screen max-width: 450px
+ *
+ */
+@media only screen and (max-width: 450px)
+{
+      body
+      {
+        font-size: 15px;
+      }
+      h1
+      {
+        font-size: 30%;
+        padding-bottom: 25px;
+      }
+      .nav-item
+      {
+        flex: none;
+        font-size: 15px;
+        width: 100%;
+        text-align: left;
+
+      }
+
+      .info_me
+      {
+      line-height: 2em;
+
+     }
+
+    #social a
+    {
+      width: 100%;
+      display: block;
+    }
+
+}
+
+/*
+ *
+ * media queery for screen min-width: 760px
+ *
+ */
+@media only screen and (min-width: 760px)
+{
+    body{
+      font-size: 18px;
+    }
+    .nav-list ,
+    footer li{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 18px;
+
+
+    }
+    .nav-item {
+     width: 25%;
+     text-align: center;
+
+    }
+
+
+     .about p
+     {
+       line-height: 2em;
+    }
+    picture{
+      padding:20px 0;
+    }
+
+
+}
